@@ -1,3 +1,61 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  /* Card styles */
+  .card {
+    @apply bg-white rounded-2xl shadow-lg p-4;
+  }
+
+  /* Button styles */
+  .btn-primary {
+    @apply bg-primary px-4 py-2 rounded-full text-white font-semibold active:opacity-80;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary px-4 py-2 rounded-full text-white font-semibold active:opacity-80;
+  }
+
+  /* Input styles */
+  .input-field {
+    @apply border-b border-gray-200 pb-3 text-lg font-semibold text-secondary;
+  }
+
+  /* Container styles */
+  .container-padding {
+    @apply px-4 py-2;
+  }
+
+  /* Text styles */
+  .heading-1 {
+    @apply text-4xl font-bold text-secondary;
+  }
+
+  .heading-2 {
+    @apply text-2xl font-semibold text-secondary;
+  }
+
+  .body-text {
+    @apply text-base text-gray-600;
+  }
+
+  /* Layout styles */
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+
+  /* Spacing utilities */
+  .section-spacing {
+    @apply my-4;
+  }
+
+  /* Shadow utilities */
+  .shadow-custom {
+    @apply shadow-lg shadow-primary/20;
+  }
+}
